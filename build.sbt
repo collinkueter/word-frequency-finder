@@ -1,4 +1,6 @@
-name := "john-deere-interview"
+import com.typesafe.sbt.packager.Keys.{dockerBaseImage, dockerRepository}
+
+name := "word-frequency-finder"
 
 version := "0.1"
 
@@ -6,9 +8,15 @@ scalaVersion := "2.13.7"
 
 libraryDependencies ++= {
   Seq(
-    "org.typelevel" %% "cats-core"   % "2.6.1",
-    "org.typelevel" %% "cats-effect" % "3.2.9",
     "org.scalactic" %% "scalactic"   % "3.2.10",
     "org.scalatest" %% "scalatest"   % "3.2.10" % "test"
   )
 }
+
+dockerBaseImage := "java:8-jre"
+Docker/packageName := "your-project-id/api"
+Docker/maintainer := "collinkueter@gmail.com"
+dockerRepository := Some("us.gcr.io")
+
+enablePlugins(JavaAppPackaging)
+enablePlugins(DockerPlugin)
