@@ -1,3 +1,5 @@
+package word.frequency.finder.v1
+
 object AppRunner extends App {
 
   private val words: Seq[String] = WordFetcher.fetch("https://www.gutenberg.org/files/2701/2701-0.txt")

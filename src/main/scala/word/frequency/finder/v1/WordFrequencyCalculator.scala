@@ -1,3 +1,5 @@
+package word.frequency.finder.v1
+
 object WordFrequencyCalculator {
 
   def calculate(word: String, frequencies: Map[String, Int]): Map[String, Int] = {

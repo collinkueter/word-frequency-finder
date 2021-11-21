@@ -1,3 +1,5 @@
+package word.frequency.finder.v1
+
 import scala.io.{BufferedSource, Source}
 import scala.util.Using
 

@@ -1,3 +1,5 @@
+package word.frequency.finder.v1
+
 object TopWords {
 
   def topWords(frequencies: Map[String, Int], numberOfTopResults: Int): Seq[String] = {

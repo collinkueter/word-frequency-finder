@@ -1,5 +1,7 @@
-object CommonWordExcluder {
-  val commonWordsToExclude = Seq(
+package word.frequency.finder
+
+object CommonWords {
+  val words = Seq(
     "the",
     "of",
     "to",
@@ -51,8 +53,4 @@ object CommonWordExcluder {
     "each",
     "she"
   )
-
-  def exclude(words: Seq[String]): Seq[String] = {
-    words.filterNot(word => commonWordsToExclude.map(_.toLowerCase).contains(word.toLowerCase))
-  }
 }
