@@ -2,6 +2,10 @@
 
 Given an url to a text file, this application finds the top n words based on their frequency, excluding common words such as "a", "the", etc.
 
+The `v1` package contains the _Scala Way_. 
+
+The `v2` package is the _FS2 Streams Way_
+
 ## How to Deploy to Google Cloud Platform (GCP)
 
 1. Substitute your Google Cloud Project ID in the `packageName` field in the `build.sbt` file
